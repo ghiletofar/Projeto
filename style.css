@@ -5,22 +5,30 @@
 }
 
 :root {
-  --switch-bg: url(./assets/moon.svg);
+  --switch-bg-switch: url(./assets/moon.svg);
+  --overall-background-color: #0c0c14;
+  --border-color: rgba(255, 255, 255, 0.5);
+  --background-color: rgba(255, 255, 255, 0.1);
+  --text-color: white;
 }
 
-.test {
-  --switch-bg: url(./assets/sun.svg);
+.light {
+  --switch-bg-switch: url(./assets/sun.svg);
+  --overall-background-color: #ececf4;
+  --border-color: rgba(0, 0, 0, 0.5);
+  --background-color: rgba(0, 0, 0, 0.1);
+  --text-color: black;
 }
 
 body {
-  background: url(./assets/bg2.jpeg) no-repeat top center/cover;
+  background: var(--overall-background-color);
 }
 
 body * {
   font-family: "Finlandica", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: var(--text-color);
 }
 
 #container {
@@ -35,7 +43,7 @@ body * {
 }
 
 #profile img {
-  border: 2px solid white;
+  border: 2px solid var(--border-color);
   width: 112px;
   border-radius: 50%;
 }
@@ -55,7 +63,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg) no-repeat center/70%;
+  background: white var(--switch-bg-switch) no-repeat center/70%;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -65,7 +73,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.test #switch button {
+.light #switch button {
   right: 0;
   left: initial;
 }
@@ -74,8 +82,8 @@ body * {
   display: block;
   width: 64px;
   height: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
@@ -94,8 +102,8 @@ ul li a {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 
   backdrop-filter: blur(2px);
