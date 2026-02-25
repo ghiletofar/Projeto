@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*   background-image: url(./assets/bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  */
+  background: url(./assets/bg2.jpeg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Finlandica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  border: 2px solid white;
+  width: 112px;
+  border-radius: 50%;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition:
+    background 0.5s,
+    transform 0.5s;
+}
+
+#kick:hover {
+  transform: scale(1.1);
+  background: green;
+}
+
+#twitch:hover {
+  transform: scale(1.1);
+  background: purple;
+}
+
+#youtube:hover {
+  transform: scale(1.1);
+  background: red;
+}
+
+#twitter:hover {
+  transform: scale(1.1);
+}
