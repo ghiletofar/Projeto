@@ -63,7 +63,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-switch) no-repeat center/70%;
+  background: white var(--switch-bg-switch) no-repeat center center/70%;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -119,19 +119,20 @@ ul li a {
 
 #kick:hover {
   transform: scale(1.1);
-  background: green;
+  background: rgba(82, 250, 23);
 }
 
 #twitch:hover {
   transform: scale(1.1);
-  background: purple;
+  background: rgba(145, 70, 255);
 }
 
 #youtube:hover {
   transform: scale(1.1);
-  background: red;
+  background: rgba(255, 3, 53);
 }
 
 #twitter:hover {
   transform: scale(1.1);
+  background: rgba(8, 180, 255);
 }
