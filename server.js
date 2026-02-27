@@ -3,9 +3,9 @@ const express = require("express")
 const path = require("path")
 const app = express()
 
-app.use(express.static(path.join(__dirname, "public/css")))
-app.use(express.static(path.join(__dirname, "public/assets")))
-app.use(express.static(path.join(__dirname, "public/script")))
+app.use(express.static(path.join(__dirname, "css")))
+app.use(express.static(path.join(__dirname, "assets")))
+app.use(express.static(path.join(__dirname, "script")))
 
 app.get("/", (request, response) => {
   readFile("./index.html", "utf8", (err, html) => {
