@@ -1,0 +1,30 @@
+<!doctype html>
+  <html lang="pt-br" class="">
+  <head>
+    <%- include("partials/header") %>
+    <title>Projeto</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+  <%- include("partials/navbar") %>
+  <div id = "container">
+    <div id = "register">
+      <h2>Registro</h2>
+      <form action="/signup" method="POST">
+        <div class="form-group">
+          <h4>Usuario</h4>
+          <input type="text" id="name" name="username" required autocomplete="off"></input>
+        </div>
+        <div class="form-group">
+          <h4>Senha</h4>
+          <input type="password" name="password" id="password" required></input>
+          </div>
+        <button type="submit" class="submit-btn">Registrar</button>
+      </form>
+      <p>Ja possui uma conta? <a href="/login">Entrar</a></p>
+    </div>
+  </div>
+  </body>
+  </html>

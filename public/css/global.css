@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --switch-bg-switch: url(../assets/moon.svg);
+  --overall-background-color: #0c0c14;
+  --border-color: rgba(255, 255, 255, 0.5);
+  --background-color: rgba(255, 255, 255, 0.1);
+  --text-color: white;
+}
+
+.light {
+  --switch-bg-switch: url(../assets/sun.svg);
+  --overall-background-color: #ececf4;
+  --border-color: rgba(0, 0, 0, 0.5);
+  --background-color: rgba(0, 0, 0, 0.1);
+  --text-color: black;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--overall-background-color);
+}
+
+body * {
+  font-family: "Finlandica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}

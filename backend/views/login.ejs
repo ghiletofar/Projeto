@@ -1,0 +1,43 @@
+<!doctype html>
+    <html lang="pt-br" class="">
+    <head>
+      <%- include("partials/header") %>
+      <title>Projeto</title>
+      <link rel="stylesheet" href="css/global.css" />
+      <link rel="stylesheet" href="css/navbar.css"/>
+      <link rel="stylesheet" href="css/login.css" />
+    </head>
+    <body class="login-page">
+      <%- include("partials/navbar") %>
+      <div id = "container">
+        <div id = "login">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <div class="user-group">
+              <h4>Usuario</h4>
+              <% if (errorUser) {%>
+                <div class="error"><%=errorUser%></div>
+              <%}%>
+            </div>
+            <input type="text" id="name" name="username" required autocomplete="off"></input>
+          </div>
+          <div class="form-group">
+            <div class="pass-group">
+              <h4>Senha</h4>
+              <% if (errorPassword){%>
+                <div class="error"><%=errorPassword%></div>
+              <%}%>
+            </div>
+            <input type="password" name="password" id="password" required></input>
+          </div>
+          <button type="submit" class="submit-btn">Entrar</button>
+          <a class="submit-btn" href="/oauth/redirect">Entrar com Twitch <ion-icon id="logotwitch" name="logo-twitch"></ion-icon></a>
+        </form>
+        <p>Não possui uma conta? <a class="registrar-se" href="/signup">Registrar-se</a></p>
+        </div>
+      </div>
+    </body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </html>

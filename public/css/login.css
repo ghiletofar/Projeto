@@ -1,0 +1,130 @@
+#container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card de login */
+#login {
+  background-color: #18181b;
+  width: 380px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #2f2f35;
+  color: #efeff1;
+}
+
+/* Título */
+#login h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Grupo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.error {
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: red;
+}
+
+.user-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pass-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Labels */
+.form-group h4 {
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #adadb8;
+}
+
+/* Inputs */
+.form-group input {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  border: 1px solid #3a3a3d;
+  background-color: #0e0e10;
+  color: #efeff1;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+/* Focus */
+.form-group input:focus {
+  outline: none;
+  border: 1px solid #9147ff; /* roxo Twitch */
+}
+
+/* Botão maior estilo Twitch */
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 5px;
+  margin-top: 15px;
+  width: 100%; /* ocupa toda a largura do card */
+  height: 50px; /* mais alto */
+  border-radius: 6px;
+  border: none;
+  background-color: #9147ff;
+  color: white;
+  font-weight: 600;
+  font-size: 16px; /* aumenta um pouco o texto */
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover botão */
+.submit-btn:hover {
+  background-color: #772ce8;
+  transform: translateY(-2px); /* efeito leve de hover */
+}
+
+/* Active / clicando */
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+/* Texto inferior */
+#login p {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #adadb8;
+}
+
+/* Link */
+a.registrar-se {
+  color: #bf94ff;
+  text-decoration: none;
+}
+
+a.registrar-se:hover {
+  text-decoration: underline;
+}
+
+.login-page .direita a {
+  display: none;
+}
